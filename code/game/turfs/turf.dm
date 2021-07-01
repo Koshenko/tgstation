@@ -114,6 +114,10 @@ GLOBAL_LIST_EMPTY(station_turfs)
 	if (light_power && light_range)
 		update_light()
 
+	var/list/affected_z_levels = SSmapping.levels_by_trait(ZTRAIT_SNOWSTORM)
+	if(z in affected_z_levels)
+		AddComponent(/datum/component/weather_origin)
+
 	var/turf/T = SSmapping.get_turf_above(src)
 	if(T)
 		T.multiz_turf_new(src, DOWN)

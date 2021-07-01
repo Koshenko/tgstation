@@ -41,6 +41,7 @@
 			"Gravity": true,
 			"Ice Ruins": true,
 			"Weather_Snowstorm": true,
+			"Weather_Area": true,
 			"Baseturf": "/turf/open/openspace/icemoon/keep_below"
 		}
 	],
